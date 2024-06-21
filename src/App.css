@@ -1,0 +1,78 @@
+.container {
+  width: 45rem;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container h1{
+  font-size: 4rem;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.container input{
+  width: calc(100% - 2rem);
+  height: 3rem;
+  margin-left: 1rem;
+
+  border-radius: 16px;
+  border: 2px solid rgb(72, 137, 207);
+  background-color: rgb(210, 229, 249);
+
+  text-align: center;
+}
+
+.container input::placeholder{
+  text-align: center;
+}
+
+.container input:hover{
+  border: 2px solid rgb(242, 191, 60);
+  background-color: rgb(249, 241, 210);
+}
+
+.container .wrapper_users{
+  width: cal(100% - 1rem);
+  height: 100vh;
+  margin: 1rem;
+
+  border-radius: 8px;
+  background-color: rgb(251, 251, 251);
+}
+
+.container .wrapper_users:hover{
+  overflow-y: scroll;
+}
+
+.container .wrapper_users::-webkit-scrollbar {
+  width: 0.25rem;              
+}
+
+.container .wrapper_users::-webkit-scrollbar-track {
+  background: rgb(163, 163, 163);        
+}
+
+.container .wrapper_users::-webkit-scrollbar-thumb {
+  background-color: rgba(35, 23, 24, 0.6);  
+  border-radius: 16px; 
+}
+
+.container .wrapper_users ul{
+  display: grid;
+
+  grid-template-areas: 
+    "User User User User"
+    "User User User User"
+    "User User User User";
+
+  gap: 2rem;
+  list-style: none;
+}
+
+.container .wrapper_users ul li{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
